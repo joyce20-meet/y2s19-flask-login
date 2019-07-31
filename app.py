@@ -30,7 +30,7 @@ def signup():
     return home()
 
 
-@app.route('/logged-in')
+@app.route('/logged-in', methods=["POST"])
 def logged_in():
     return render_template('logged.html')
 
@@ -38,6 +38,7 @@ def logged_in():
 @app.route('/logout')
 def logout():
     return home()
+
 
 
 
